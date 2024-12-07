@@ -1,0 +1,236 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Arial";
+  background-color: black;
+  color: rgb(208, 205, 205);
+}
+@media screen and (max-width: 1500px) {
+  .child {
+    position: inherit;
+  }
+  .Statgrid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+  }
+  .Statgrid > div {
+    padding: 5px;
+    align-self: center;
+    justify-self: center;
+    width: 20%;
+    margin: auto;
+  }
+  .fillgrid {
+    display: grid;
+    width: 70%;
+    grid-auto-columns: max-content;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .pcformat {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "1 1" "2 2 " "Compare Compare" "3 3 " "4 4" "5 5 " "6 6 " "7 7 " "8 8 " "9 9" "cert cert";
+    grid-row-gap: 10px;
+    padding: 20px;
+  }
+  .spreadsheet {
+    grid-area: Compare;
+    width: 100%;
+  }
+  .Cert {
+    grid-area: cert;
+  }
+  img {
+    max-width: 100%;
+  }
+  .split {
+    grid-column: span 2;
+  }
+  #Comparison {
+    grid-area: 10;
+    width: 90%;
+    grid-column: 1 / span 2;
+    justify-self: center;
+  }
+  .Cert {
+    width: 50%;
+    justify-self: center;
+  }
+  #compheader {
+    grid-area: 9;
+    grid-column: 1 / span 2;
+    justify-self: center;
+  }
+  .Statgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    position: absolute;
+    width: fit-content;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+  }
+  .Statgrid > div,
+  .Statgrid > div > * {
+    background-color: transparent;
+  }
+  .fillgrid {
+    display: grid;
+    width: 70%;
+    grid-auto-columns: max-content;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: auto;
+  }
+}
+
+.Split,
+.evenspread {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-content: center;
+}
+.Split {
+  justify-content: center;
+  align-content: center;
+}
+header > .evenspread {
+  justify-content: space-between;
+  align-items: center;
+}
+
+#Stats > div > p,
+#Stats > div > h1 {
+  align-self: center;
+  min-width: 20%;
+}
+header > div > img {
+  width: 10%;
+}
+
+body {
+  width: 100%;
+}
+header {
+  padding-right: 10%;
+}
+
+img {
+  width: 100%;
+}
+
+h3,
+h2,
+h1 {
+  padding: 20px;
+}
+#Comparison > img {
+  width: 50%;
+}
+.updownsplit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+.updownsplit {
+  padding: 10px;
+}
+#Stats > div {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+body > div > h3 {
+  font-weight: normal;
+  font-size: large;
+}
+footer > div > .Split > div:last-child {
+  align-self: center;
+  padding-left: 10px;
+}
+footer div img {
+  width: 75px;
+  height: 75px;
+  align-self: center;
+  padding: 1%;
+}
+body > img:last-of-type {
+  width: 75%;
+  padding-left: 12.5%;
+}
+#Stats {
+  padding: 50px;
+  flex-wrap: wrap;
+  width: 90%;
+}
+footer {
+  padding: 20px;
+}
+.parent {
+  position: relative;
+  width: 100%;
+}
+
+.child div,
+.child p,
+.child h1 {
+  background-color: transparent;
+  color: white;
+  font-weight: 500px;
+  font-size: larger;
+  align-self: center;
+}
+button {
+  border-radius: 10px;
+  border-color: black;
+  border-width: 5px;
+  background-color: yellow;
+  padding: 10px;
+  color: black;
+}
+#Promise > * {
+  width: 20%;
+  text-align: center;
+  padding: 20px;
+}
+.twitter-timeline {
+  width: 50%;
+  padding-left: 25%;
+}
+
+.fillgrid > div > button {
+  border-width: 2px;
+  border-radius: 3;
+  border-color: white;
+
+  background: transparent;
+}
+.fillgrid p,
+.fillgrid h1 {
+  padding: 10px;
+  color: white;
+}
+body > img:last-of-type {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+ol,
+li,
+ul,
+h4 {
+  padding: 20px;
+}
+h4 {
+  font-size: 10px;
+}
